@@ -1,0 +1,15 @@
+[project]
+name = "meeting-transcripts"
+version = "0.1.0"
+description = "Verifica acesso a transcrições do Teams e tl;dv via API"
+requires-python = ">=3.11"
+dependencies = [
+    "msal>=1.36.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+teams-check = "src.teams.teams_check:main"
+tldv-check  = "src.tldv.tldv_check:main"
