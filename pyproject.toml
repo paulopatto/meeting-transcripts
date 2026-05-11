@@ -14,8 +14,12 @@ dependencies = [
 teams-check = "src.teams.teams_check:main"
 tldv-check  = "src.tldv.tldv_check:main"
 
+[tool.pytest.ini_options]
+addopts = "--tb=short --spec"
+
 [project.optional-dependencies]
 test = [
     "pytest>=8.0",
     "pytest-mock>=3.14",
+    "pytest-spec>=3.1.0",
 ]

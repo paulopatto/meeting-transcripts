@@ -292,6 +292,7 @@ dependencies = [
 test = [
     { name = "pytest" },
     { name = "pytest-mock" },
+    { name = "pytest-spec" },
 ]
 
 [package.metadata]
@@ -299,6 +300,7 @@ requires-dist = [
     { name = "msal", specifier = ">=1.36.0" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8.0" },
     { name = "pytest-mock", marker = "extra == 'test'", specifier = ">=3.14" },
+    { name = "pytest-spec", marker = "extra == 'test'", specifier = ">=3.1.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "requests", specifier = ">=2.33.1" },
     { name = "rich", specifier = ">=15.0.0" },
@@ -395,6 +397,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/68/14/eb014d26be205d38ad5ad20d9a80f7d201472e08167f0bb4361e251084a9/pytest_mock-3.15.1.tar.gz", hash = "sha256:1849a238f6f396da19762269de72cb1814ab44416fa73a8686deac10b0d87a0f", size = 34036, upload-time = "2025-09-16T16:37:27.081Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5a/cc/06253936f4a7fa2e0f48dfe6d851d9c56df896a9ab09ac019d70b760619c/pytest_mock-3.15.1-py3-none-any.whl", hash = "sha256:0a25e2eb88fe5168d535041d09a4529a188176ae608a6d249ee65abc0949630d", size = 10095, upload-time = "2025-09-16T16:37:25.734Z" },
+]
+
+[[package]]
+name = "pytest-spec"
+version = "6.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ce/cf/c36d3e2bad61018e426090d68b0a7ca9c7e386ab95d901147b4eab9904ae/pytest_spec-6.0.0.tar.gz", hash = "sha256:2db490edb4f277b84fd18913fe74be7dbadd47aa24390c0b6044760feaf02f55", size = 1193809, upload-time = "2026-02-22T21:27:55.387Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9f/a3/61a43002eeeb8bd00db58e3a4c0e5db78732e51f794183c0d14138e00ab9/pytest_spec-6.0.0-py3-none-any.whl", hash = "sha256:af4abcfd678009d9ef46a8af9261a89c84b20d177e3e40a68d038ce0963428b2", size = 15292, upload-time = "2026-02-22T21:27:54.113Z" },
 ]
 
 [[package]]
