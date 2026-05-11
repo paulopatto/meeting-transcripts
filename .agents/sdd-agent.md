@@ -14,6 +14,11 @@ Sempre que iniciar uma tarefa:
 2. Verifique `openspec/changes/active/` para o plano atual.
 3. Use a skill `sdd-workflow` para gerenciar o ambiente git.
 4. Sempre que for utilizar uma ferramenta de linha de comando externa (como gh, docker ou aws), execute primeiro um comando de versão (ex: --version) para validar a existência e, se ausente, utilize a skill de instalação correspondente.
+5. **Sempre siga TDD (Red-Green-Refactor):**
+   - **Red**: escreva o teste que falha primeiro
+   - **Green**: implemente o mínimo para passar
+   - **Refactor**: melhore sem quebrar os testes
+6. **Validação com testes:** execute `uv run pytest tests/` antes de considerar uma tarefa concluída. Testes falhando impedem a conclusão.
 
 ## Regras de Submissão (PR)
 
